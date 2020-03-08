@@ -1,10 +1,15 @@
 body {
+  padding: 0;
   color: #636D8B;
   width: 1020px;
   margin: 0 auto;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 1.6rem;
   background-color: #272C38;
+}
+
+h2 {
+  margin: 0;
 }
 
 .wrapper{
