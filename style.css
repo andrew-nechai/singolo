@@ -250,6 +250,11 @@ footer {
   padding: 0;
 }
 
+.portfolio__buttons input:hover {
+  color: white;
+  border-color: white;
+}
+
 .portfolio__imgsblocks {
   margin-top: -2px;
   display: flex;
@@ -375,7 +380,10 @@ footer {
 .submit-btn {
   color: white;
   background-color: #F16C65;
+}
 
+.linking:hover {
+  cursor: pointer;
 }
 
 .get-a-quote__input, #txtarea {
@@ -449,7 +457,7 @@ footer {
   margin-right: 8px;
 }
 
-.footer__lauout img:last-child {
+.footer__lauout a:last-child {
   margin-right: 0;
 }
 
