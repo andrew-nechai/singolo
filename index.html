@@ -7,31 +7,42 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper">
-		<header>
+	<div class="wrapper-pos-fixed">
+		<header class="container header">
 			<div class="logo">
-				<a href="#">
-					<h1>SINGOLO<span>*</span></h1>					
-				</a>				
+				<h1>SINGOLO<span>*</span></h1>								
 			</div>
 			<nav class="header__navigation">
 				<ul class="navigation">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">SERVICES</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#topi" class="a-active a-unactive">HOME</a></li>
+					<li><a href="#our-services" class="a-unactive">SERVICES</a></li>
+					<li><a href="#portfolio" class="a-unactive">PORTFOLIO</a></li>
+					<li><a href="#about-us" class="a-unactive">ABOUT</a></li>
+					<li><a href="#contact" class="a-unactive">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
-		<div class="slider">
-			<div><img src="assets/slider-left-btn.png" alt="left" id="slider-left-btn"></div>
-			<div><img src="assets/vertical-iphone.png" alt="vertical-iphone" id="vertical-iphone"></div>
-			<div><img src="assets/horisontal-iphone.png" alt="horisontal-iphone" id="horisontal-iphone"></div>
-			<div><img src="assets/slider-right-btn.png" alt="slider-right-btn" id="slider-right-btn"></div>
-		</div>	
+	</div>
+	<div class="wrapper">
+		<div class="wrapper__slider">
+			<img src="assets/black-screen.jpg" alt="" class="black-screen-horis">
+			<img src="assets/black-screen.jpg" alt="" class="black-screen-vert">
+			<img src="assets/slider-left-btn.png" alt="left" id="slider-left-btn">
+			<div class="slide active">
+				<a name="topi" id="topi" class="yakor"></a>
+				<div class="vertical-iphone"><img src="assets/vertical-iphone.png" alt="vertical-iphone" id="vertical-iphone"></div>
+				<div class="horisontal-iphone"><img src="assets/horisontal-iphone.png" alt="horisontal-iphone" id="horisontal-iphone"></div>
+			</div>	
+			<div class="slide second">
+				<img src="assets/Slider.jpg" alt="Slider">
+			</div>	
+			<img src="assets/slider-right-btn.png" alt="slider-right-btn" id="slider-right-btn">
+		</div>
 		<div class="line2"></div>
+	</div>
+	<div class="wrapper">
 		<div class="our-services">
+			<a name="our-services" id="our-services" class="yakor"></a>
 			<h2 class="title">Our Services</h2>
 			<p class="title-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			<div class="service-block">
@@ -62,8 +73,6 @@
 						<span>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</span>
 					</div>
 				</div>
-			</div>
-			<div class="mrgn-top service-block">
 				<div class="service-block__block">
 					<div class="service-block__icon">
 						<img src="assets/device.png" alt="">
@@ -96,6 +105,7 @@
 	</div>
 	<div class="wrapper bg-blue-color">
 		<div class="portfolio">
+		<a name="portfolio" id="portfolio" class="yakor"></a>
 			<h2 class="title">Portfolio</h2>
 			<p class="title-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 			<div class="portfolio__categories">
@@ -125,6 +135,7 @@
 	<div class="wrapper-colored">
 		<div class="line"></div>
 		<div class="about-us">
+			<a name="about-us" id="about-us" class="yakor"></a>
 			<h2 class="title">About Us</h2>
 			<p class="title-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			<div class="persons">
@@ -196,12 +207,13 @@
 	</div>
 	<div class="wrapper color-red">
 		<section class="get-a-quote">
+			<a name="contact" id="contact" class="yakor"></a>
 			<h2>Get a Quote</h2>
 			<p class="title-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			<div class="layout-2-column">
-				<form action="post" class="get-a-quote__form">
-					<input type="text" class="get-a-quote__input" placeholder="Name (Required)">
-					<input type="text" class="get-a-quote__input" placeholder="Email (Required)">
+				<form action="#" class="get-a-quote__form">
+					<input type="text" class="get-a-quote__input" placeholder="Name (Required)" required>
+					<input type="text" class="get-a-quote__input" placeholder="Email (Required)" required>
 					<input type="text" class="get-a-quote__input" placeholder="Subject">
 					<textarea class="get-a-quote__txtarea" name="#" id="txtarea" cols="50" rows="10" placeholder="Describe your project in detail..."></textarea>
 					<input type="submit" class="submit-btn linking">
@@ -231,5 +243,6 @@
 			<a href="#" class="links"><img src="assets/singolo3/in.png" alt="in"></a>
 		</div>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
